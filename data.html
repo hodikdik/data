@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Document Title, Description, and Author -->
+  <title>Concept - Bootstrap 5 Portfolio Template</title>
+  <meta name="description" content="Concept is a Bootstrap 5 Portfolio Template.">
+
+  <!-- Favicon and Touch Icons -->
+  <link rel="icon" type="image/png" sizes="512x512" href="./static/favicon/favicon-512x512.png">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./static/css/concept-bsb.css">
+
+  <meta charset="utf-8" />
+  <!-- 引入刚刚下载的 ECharts 文件 -->
+  <script src="static/js/echarts.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header">
+
+    <!-- Navbar 1 - Bootstrap Brain Component -->
+    <nav class="navbar navbar-expand-md bg-light bsb-navbar bsb-navbar-hover bsb-navbar-caret">
+      <div class="container">
+        <a class="navbar-brand" href="index">
+          <img src="./static/img/header/concept-logo.png" class="bsb-tpl-logo" alt="">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index">首页</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="data">民族数据</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="costume">民族服饰</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="culture">民族文化</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nazenaze">naze naze的故事</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero 1 - Bootstrap Brain Component -->
+    <section class="px-5 py-8 py-xxl-20 background-position-center background-size-cover bsb-overlay bsb-hover-pull" style="background-image: url('./static/img/header/home2.png');">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 text-center text-white">
+            <h1 class="display-3 fw-bold mb-3">搜索“独龙族”</h1>
+            <p class="lead mb-5">数据来源：清博舆情；时间区间：2023年4月1日-2023年6月1日</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </header>
+<!-- Service 1 - Bootstrap Brain Component -->
+    <section class="bg-light py-5 py-xl-8">
+      <div class="container mb-5 mb-md-6">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 text-center">
+            <h2 class="mb-4 display-5">媒体上关于独龙族的报道</h2>
+            <p class="text-secondary mb-4 mb-md-5">赞扬情绪超过80%，积极弘扬民族文化</p>
+            <hr class="w-50 mx-auto mb-0 text-secondary">
+          </div>
+        </div>
+      </div>
+
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 600%"></div>
+
+
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+    option = {
+
+  series: [
+    {
+      name: 'Access From',
+      type: 'pie',
+      radius: '80%',
+      data: [
+        { value: 283, name: '喜悦 3.5%' },
+        { value: 6492, name: '赞扬 81.1%' },
+        { value: 361, name: '愤怒 4.5%' },
+        { value: 356, name: '厌恶 4.4%' },
+        { value: 55, name: '悲伤 0.7%' },
+        { value: 45, name: '恐惧 0.6%' },
+        { value: 416, name: '惊奇 5.2%' }
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+  <!-- Main -->
+
+
+  </main>
+<section class="bg-light py-5 py-xl-8">
+      <div class="container mb-5 mb-md-6">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 text-center">
+            <h2 class="mb-4 display-5">媒体上关于独龙族的话题分类</h2>
+            <p class="text-secondary mb-4 mb-md-5">世外桃源旅游热门地，脱贫攻坚民生多关注</p>
+            <hr class="w-50 mx-auto mb-0 text-secondary">
+          </div>
+        </div>
+      </div>
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container2" style="height: 600%"></div>
+
+
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container2');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+    option = {
+  xAxis: {
+    type: 'category',
+    data: ['旅行', '社会', '时政', '其他', '财经', '文学', '教育', '娱乐', '文化', '美食', '时尚', '历史', '体育', '农业']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      data: [8949, 5295, 4973, 1433, 1078, 820, 550, 416, 328, 248, 230, 168, 86, 76],
+      type: 'bar',
+      showBackground: true,
+      backgroundStyle: {
+        color: 'rgba(180, 180, 180, 0.2)'
+      }
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+
+  <section class="bg-light py-5 py-xl-8">
+      <div class="container mb-5 mb-md-6">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 text-center">
+            <h2 class="mb-4 display-5">媒体上关于独龙族的热门词</h2>
+            <p class="text-secondary mb-4 mb-md-5">西南一隅的少数民族，牵动全国的关注</p>
+            <hr class="w-50 mx-auto mb-0 text-secondary">
+          </div>
+        </div>
+      </div>
+
+      <main id="main">
+
+      <!-- About Me 1 - Bootstrap Brain Component -->
+      <section class="bg-light py-5 py-xl-8">
+        <div class="container mb-4 mb-md-5 mb-xl-8">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-10 col-xxl-8">
+              <img class="img-fluid rounded shadow" loading="lazy" src="./static/img/portfolio/cloud3.png" alt="">
+            </div>
+          </div>
+        </div>
+
+  <!-- Footer 1 -->
+  <footer class="footer">
+
+    <!-- Copyright - Bootstrap Brain Component -->
+    <div class="bg-light border-top py-3 py-md-4 py-xl-8">
+      <div class="container overflow-hidden">
+        <div class="row gy-5 gy-md-0">
+          <div class="col-xs-12 col-md-7 order-1 order-md-0">
+            <div class="copyright text-center text-md-start">
+              &copy; 中央民族大学 新闻与传播 22级非全日制 何狄嘉 22301279
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+  <!-- Javascript Files: Vendors -->
+  <script src="./static/vendor/jquery/jquery-3.6.0.min.js"></script>
+  <script src="./static/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="./static/vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="./static/vendor/isotope/packery-mode.pkgd.min.js"></script>
+  <script src="./static/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- Javascript Files: Controllers -->
+  <script src="./static/controller/project-1.js"></script>
+</body>
+
+</html>
